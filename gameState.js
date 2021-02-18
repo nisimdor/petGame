@@ -1,15 +1,4 @@
-import { modFox, modScene, tooglePoopBag, writeModal } from "./ui";
-import {
-  RAIN_CHANCE,
-  SCENES,
-  DAY_LENGTH,
-  NIGHT_LENGTH,
-  getNextHungerTime,
-  getNextDieTime,
-  getNextPoopTime,
-} from "./constants";
-
-export const Events = {
+const Events = {
   FISH: "fish",
   POOP: "poop",
   WEATHER: "weather",
@@ -235,8 +224,7 @@ export const gameState = {
     return this.clock;
   },
 };
-
-export function handleUserAction(event) {
+function handleUserAction(event) {
   let currentState = gameState.states[gameState.current];
   if (currentState) {
     // if we have a wildcard event or a defined event

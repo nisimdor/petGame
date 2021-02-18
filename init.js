@@ -1,5 +1,5 @@
 // constants
-const TICK_RATE = 3000;
+const TICK_RATE = 2000;
 const RAIN_CHANCE = 0.2;
 const ICONS = ["fish", "poop", "weather"];
 const SCENES = ["day", "rain"];

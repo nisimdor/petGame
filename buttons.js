@@ -4,7 +4,7 @@ const toggleHighlighted = (icon, show) => {
     .classList.toggle("highlighted", show);
 };
 
-export default function initButtons(handleUserAction) {
+function initButtons(handleUserAction) {
   let selectedIcon = 0;
 
   const updateIcon = (selected, reducer) => {

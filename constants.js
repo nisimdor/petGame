@@ -1,15 +1,15 @@
-export const TICK_RATE = 2000;
-export const RAIN_CHANCE = 0.2;
-export const ICONS = ["fish", "poop", "weather"];
-export const SCENES = ["day", "rain"];
-export const DAY_LENGTH = 11;
-export const NIGHT_LENGTH = 4;
+const TICK_RATE = 2000;
+const RAIN_CHANCE = 0.2;
+const ICONS = ["fish", "poop", "weather"];
+const SCENES = ["day", "rain"];
+const DAY_LENGTH = 11;
+const NIGHT_LENGTH = 4;
 
-export const getNextHungerTime = (clock) =>
+const getNextHungerTime = (clock) =>
   Math.floor(Math.random() * 3) + 4 + clock;
 
-export const getNextDieTime = (clock) =>
+const getNextDieTime = (clock) =>
   Math.floor(Math.random() * 2) + 3 + clock;
 
-export const getNextPoopTime = (clock) =>
+const getNextPoopTime = (clock) =>
   Math.floor(Math.random() * 3) + 5 + clock;

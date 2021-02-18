@@ -62,6 +62,19 @@ const writeModal = (text = "") => {
 };
 
 //game state
+const Events = {
+  FISH: "fish",
+  POOP: "poop",
+  WEATHER: "weather",
+  // Time Based Events
+  WAKE: "wake",
+  SLEEP: "sleep",
+  DIE: "die",
+  START_POOP: "start_poop",
+  START_CELEBRATE: "start_celebrate",
+  END_CELEBRATE: "end_celebrate",
+  HUNGRY: "hungry",
+};
 
 const changeSettings = (fox, scene) => {
   modFox(fox);
